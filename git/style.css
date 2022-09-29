@@ -1,16 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <title>jeje</title>
-</head>
-<!-- <style>
 
   :root{
     --color_fondo_prop: #bce3e3;
@@ -164,42 +151,3 @@
     grid-area: c_b;
   }
 
-
-
-</style> -->
-
-<body>
-    <div class="contenedor_general">
-
-      
-      <div class="navegador prop-general prop_busc">
-        <div class="primer_boton boton_nav">
-            <span>Inicio</span>
-        </div>
-
-        <div class="segundo_boton boton_nav">
-            <span>Productos</span>
-        </div>
-
-        <div class="tercer_boton boton_nav">
-            <span>Envios</span>
-        </div>
-
-        <div class="cuarto_boton boton_nav">
-          <span>Contacto</span>
-        </div>
-      </div>
-
-      <div class="info prop-general">
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, nesciunt nihil obcaecati necessitatibus fugiat fuga perspiciatis, accusantium cum nobis architecto velit voluptatum adipisci modi distinctio numquam repudiandae. Voluptas, deleniti repudiandae.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, repellendus! Eligendi tempore quibusdam deserunt, quod nostrum temporibus maiores. Eveniet porro dolor libero quod fugiat quas exercitationem nemo autem non est.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quidem quasi veritatis dignissimos, eius exercitationem ut itaque libero ullam quisquam repellendus at delectus molestias id laboriosam, sed eum odio numquam?</p>
-      </div>
-
-      <div class="pie prop-general">
-        <p>MIRA LO QUE TE ESCRIBI ACA</p>
-      </div>
-
-    </div>
-</body>
-</html>
