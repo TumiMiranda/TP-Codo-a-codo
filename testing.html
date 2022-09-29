@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <title>jeje</title>
+</head>
+<style>
+
+  :root{
+    --color_fondo_prop: #bce3e3;
+    --color_bordes_prop: #7AA7AA;
+    --color_texto: #263B3C;
+    --bordes: 1px;
+  }
+
+  *
+  {
+    margin: 0;
+    padding: 0;
+  }
+
+  body{
+    background-color: var(--color_fondo_prop);
+    color:  var(--color_texto);
+    font-size: 20px;
+    font-family: 'Patrick Hand', cursive;
+  }
+
+  .contenedor_general
+  {
+    display: grid;
+    justify-content: center;
+    grid-template-areas: 
+    " n n n n "
+    " i i i i "
+    " p p p p "
+    ;
+    grid-gap: 10px;
+    grid-template-rows: 100px 1000px 150px;
+   
+
+
+  }
+
+  .buscador
+  {
+    grid-area: b;
+  }
+
+  .logo
+  {
+    grid-area: l;
+  }
+
+  .navegador
+  {
+    display: grid;
+    grid-template-areas: "p_b s_b t_b c_b";
+    grid-template-columns:  150px 150px 150px 150px;
+    grid-gap: 5px;
+    padding-left: 20px;
+    grid-area: n;
+  }
+
+  .info
+  {
+    padding-left: 10px;
+    padding-right: 10px;
+    grid-area: i;
+  }
+
+  .pie
+  {
+    grid-area: p;
+  }
+
+  .prop-general
+  {
+  
+    background-color: var(--color_fondo_prop);
+    border-bottom: var(--color_bordes_prop);
+    border-color: black;
+    border-style: solid;
+    border-width: var(--bordes);
+    
+  }
+
+  .prop-logo
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  .prop_busc
+  {
+    
+    align-items: center;
+
+  }
+
+  .circulo-logo
+  {
+    height: 120px;
+    width: 120px;
+    border-style: solid;
+    border-width: var(--bordes);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-color: var(--color_bordes_prop);
+    overflow: hidden;
+  }
+
+  .boton_nav
+  {
+    border-style: solid;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    border-radius: 10px;
+    border-width: var(--bordes);
+    border-color: var(--color_bordes_prop);
+    height: 25px;
+    font-size: 20px;
+    transition: 0.5s;
+  }
+
+  .boton_nav:hover
+  {
+    color: white;
+    background-color: var(--color_bordes_prop);
+    border-color: #58787A;
+    padding-left: 20px;
+    
+    
+  }
+
+  .primer_boton
+  {
+    grid-area: p_b;
+  }
+
+  .segundo_boton
+  {
+    grid-area: s_b;
+  }
+
+  .tercer_boton
+  {
+    grid-area: t_b;
+  }
+
+  .cuarto_boton
+  {
+    grid-area: c_b;
+  }
+
+
+
+</style>
+
+<body>
+    <div class="contenedor_general">
+
+      
+      <div class="navegador prop-general prop_busc">
+        <div class="primer_boton boton_nav">
+            <span>Inicio</span>
+        </div>
+
+        <div class="segundo_boton boton_nav">
+            <span>Productos</span>
+        </div>
+
+        <div class="tercer_boton boton_nav">
+            <span>Envios</span>
+        </div>
+
+        <div class="cuarto_boton boton_nav">
+          <span>Contacto</span>
+        </div>
+      </div>
+
+      <div class="info prop-general">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, nesciunt nihil obcaecati necessitatibus fugiat fuga perspiciatis, accusantium cum nobis architecto velit voluptatum adipisci modi distinctio numquam repudiandae. Voluptas, deleniti repudiandae.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, repellendus! Eligendi tempore quibusdam deserunt, quod nostrum temporibus maiores. Eveniet porro dolor libero quod fugiat quas exercitationem nemo autem non est.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quidem quasi veritatis dignissimos, eius exercitationem ut itaque libero ullam quisquam repellendus at delectus molestias id laboriosam, sed eum odio numquam?</p>
+      </div>
+
+      <div class="pie prop-general">
+        
+      </div>
+
+    </div>
+</body>
+</html>
