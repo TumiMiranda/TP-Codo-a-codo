@@ -10,198 +10,54 @@
     <link rel="stylesheet" href="style.css">
     <title>jeje</title>
 </head>
-<!-- <style>
-
-  :root{
-    --color_fondo_prop: #bce3e3;
-    --color_bordes_prop: #7AA7AA;
-    --color_texto: #263B3C;
-    --bordes: 1px;
-  }
-
-  *
-  {
-    margin: 0;
-    padding: 0;
-  }
-
-  body{
-    background-color: var(--color_fondo_prop);
-    color:  var(--color_texto);
-    font-size: 20px;
-    font-family: 'Patrick Hand', cursive;
-  }
-
-  .contenedor_general
-  {
-    display: grid;
-    justify-content: center;
-    grid-template-areas: 
-    " n n n n "
-    " i i i i "
-    " p p p p "
-    ;
-    grid-gap: 10px;
-    grid-template-rows: 100px 1000px 150px;
-   
-
-
-  }
-
-  .buscador
-  {
-    grid-area: b;
-  }
-
-  .logo
-  {
-    grid-area: l;
-  }
-
-  .navegador
-  {
-    display: grid;
-    grid-template-areas: "p_b s_b t_b c_b";
-    grid-template-columns:  150px 150px 150px 150px;
-    grid-gap: 5px;
-    padding-left: 20px;
-    grid-area: n;
-  }
-
-  .info
-  {
-    padding-left: 10px;
-    padding-right: 10px;
-    grid-area: i;
-  }
-
-  .pie
-  {
-    grid-area: p;
-  }
-
-  .prop-general
-  {
-  
-    background-color: var(--color_fondo_prop);
-    border-bottom: var(--color_bordes_prop);
-    border-color: black;
-    border-style: solid;
-    border-width: var(--bordes);
-    
-  }
-
-  .prop-logo
-  {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-  }
-
-  .prop_busc
-  {
-    
-    align-items: center;
-
-  }
-
-  .circulo-logo
-  {
-    height: 120px;
-    width: 120px;
-    border-style: solid;
-    border-width: var(--bordes);
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-color: var(--color_bordes_prop);
-    overflow: hidden;
-  }
-
-  .boton_nav
-  {
-    border-style: solid;
-    display: flex;
-    align-items: center;
-    padding-left: 10px;
-    border-radius: 10px;
-    border-width: var(--bordes);
-    border-color: var(--color_bordes_prop);
-    height: 25px;
-    font-size: 20px;
-    transition: 0.5s;
-  }
-
-  .boton_nav:hover
-  {
-    color: white;
-    background-color: var(--color_bordes_prop);
-    border-color: #58787A;
-    padding-left: 20px;
-    
-    
-  }
-
-  .primer_boton
-  {
-    grid-area: p_b;
-  }
-
-  .segundo_boton
-  {
-    grid-area: s_b;
-  }
-
-  .tercer_boton
-  {
-    grid-area: t_b;
-  }
-
-  .cuarto_boton
-  {
-    grid-area: c_b;
-  }
-
-
-
-</style> -->
-
 <body>
-    <div class="contenedor_general">
+  <!-- Aca empieza el header -->
+  <header class="header">
+      <div class="logo">
+          <h1>ACA VA UN LOGO</h1>
+      </div>      
+</header>
+<!-- Aca termina el header -->
+<!-- Aca empieza el NAV -->
+<nav class="navegador prop-general prop_busc">
+  <div class="primer_boton boton_nav">
+      <span>Inicio</span>
+  </div>
+  <div class="segundo_boton boton_nav">
+      <span>Productos</span>
+  </div>
+  <div class="tercer_boton boton_nav">
+      <span>Envios</span>
+  </div>
+  <div class="cuarto_boton boton_nav">
+    <span>Contacto</span>
+  </div>
+</nav>
+<!-- Aca termina el NAV -->
 
-      
-      <div class="navegador prop-general prop_busc">
-        <div class="primer_boton boton_nav">
-            <span>Inicio</span>
-        </div>
-
-        <div class="segundo_boton boton_nav">
-            <span>Productos</span>
-        </div>
-
-        <div class="tercer_boton boton_nav">
-            <span>Envios</span>
-        </div>
-
-        <div class="cuarto_boton boton_nav">
-          <span>Contacto</span>
-        </div>
-      </div>
-
-      <div class="info prop-general">
-        <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem velit numquam quos quidem quae rem magnam? Non distinctio corporis minima harum ad. Consequatur voluptates commodi modi quos repellat consectetur aperiam.</h1>
+<!-- Aca empieza el Main -->
+<main class="contenedor_general"> 
+      <section class="info">
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, nesciunt nihil obcaecati necessitatibus fugiat fuga perspiciatis, accusantium cum nobis architecto velit voluptatum adipisci modi distinctio numquam repudiandae. Voluptas, deleniti repudiandae.</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, repellendus! Eligendi tempore quibusdam deserunt, quod nostrum temporibus maiores. Eveniet porro dolor libero quod fugiat quas exercitationem nemo autem non est.</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quidem quasi veritatis dignissimos, eius exercitationem ut itaque libero ullam quisquam repellendus at delectus molestias id laboriosam, sed eum odio numquam?</p>
-
-      </div>
-
-      <div class="pie prop-general">
-        <p>MIRA LO QUE TE ESCRIBI ACA</p>
-      </div>
-
-    </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur voluptate facere, rerum vitae repellat, quam dignissimos beatae eveniet nisi id adipisci illo illum rem, aperiam earum sit facilis qui esse?</p>
+      </section>
+      <section class="info2">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt reprehenderit ex quae quos culpa id veritatis soluta ab debitis saepe quod eligendi perferendis assumenda odio tempora, laboriosam dolorum aut. Odio!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis fugit voluptatum, quod itaque cumque commodi officia. Architecto saepe sequi, quisquam aliquid necessitatibus porro, ex libero ducimus atque deserunt sit neque!</p>
+        <p>Itaque sunt accusamus, unde id odit dolorum eos impedit, nam ex porro fuga. Animi, laudantium vitae reprehenderit eius minus blanditiis veritatis fuga sequi fugit officiis placeat natus consectetur delectus deserunt?</p>
+        <p>Earum deserunt quaerat rerum, nesciunt neque rem doloribus error laborum voluptatibus nemo saepe corporis temporibus sint cum magnam dolor reiciendis ratione recusandae quia, illum unde labore similique? Eos, ipsam distinctio!</p>
+      </section>
+ 
+  </MAIN> 
+  <!-- Aca termina el Main -->
+  
+  <!-- Aca empieza el footer -->  
+  <footer class="footer">
+       <p>Aca un copyright (?)</p>
+       <p>también pueden estar los logos de las redes sociales (?)</p>
+  </footer>
+  <!-- Aca termina el footer -->
 </body>
 </html>

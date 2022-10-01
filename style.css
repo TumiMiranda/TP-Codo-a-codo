@@ -6,30 +6,35 @@
     --bordes: 1px;
   }
 
-  *
-  {
+  *{
     margin: 0;
     padding: 0;
   }
 
   body{
-    background-color: var(--color_fondo_prop);
+    background-color:var(--color_fondo_prop);
     color:  var(--color_texto);
-    font-size: 20px;
+    font-size: 1rem;
     font-family: 'Patrick Hand', cursive;
   }
 
+  .header{
+    height: 100px;
+    background-color: var(--color_fondo_prop);
+    display: flex;
+
+  }
   .contenedor_general
   {
     display: grid;
     justify-content: center;
     grid-template-areas: 
-    " n n n n "
-    " i i i i "
-    " p p p p "
+    " l l l l "
+    " i i b b "
+    " i i b b "
     ;
     grid-gap: 10px;
-    grid-template-rows: 100px 1000px 150px;
+    grid-template-rows: 100px 100vh 150px;
    
 
 
@@ -45,14 +50,20 @@
     grid-area: l;
   }
 
-  .navegador
+  /*.navegador
   {
     display: grid;
+    height: 50px;
     grid-template-areas: "p_b s_b t_b c_b";
     grid-template-columns:  150px 150px 150px 150px;
-    grid-gap: 5px;
-    padding-left: 20px;
-    grid-area: n;
+    grid-gap: 5px;    
+
+  }*/
+  .navegador {
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end;
+
   }
 
   .info
@@ -61,6 +72,12 @@
     padding-right: 10px;
     grid-area: i;
   }
+  .info2
+  {
+    padding-left: 10px;
+    padding-right: 10px;
+    grid-area: b;
+  }
 
   .pie
   {
@@ -68,13 +85,9 @@
   }
 
   .prop-general
-  {
-  
-    background-color: var(--color_fondo_prop);
-    border-bottom: var(--color_bordes_prop);
-    border-color: black;
-    border-style: solid;
-    border-width: var(--bordes);
+  {  
+    background-color: var(--color_fondo_prop);    
+    
     
   }
 
@@ -108,15 +121,15 @@
   }
 
   .boton_nav
-  {
-    border-style: solid;
+  {   
     display: flex;
     align-items: center;
-    padding-left: 10px;
+    padding: 5px;
+    margin: 5px;
     border-radius: 10px;
-    border-width: var(--bordes);
-    border-color: var(--color_bordes_prop);
+    border: solid var(--color_bordes_prop) var(--bordes);   
     height: 25px;
+    width: 100px;
     font-size: 20px;
     transition: 0.5s;
   }
@@ -126,9 +139,7 @@
     color: white;
     background-color: var(--color_bordes_prop);
     border-color: #58787A;
-    padding-left: 20px;
-    
-    
+    padding: 5px;      
   }
 
   .primer_boton
@@ -151,3 +162,7 @@
     grid-area: c_b;
   }
 
+.footer{
+  height: 100px;
+  background-color: grey;
+}
