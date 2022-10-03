@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+  <title>jeje</title>
+</head>
+
+<style>
+
+  :root{
+    --color_fondo_prop: #bce3e3;
+    --color_bordes_prop: #7AA7AA;
+    --color_texto: #263B3C;
+    --bordes: 1px;
+  }
+
+  *{
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+
+    background-color:white;
+    color:  var(--color_texto);
+    font-size: 1rem;
+    font-family: 'Patrick Hand', cursive;
+    
+  }
+
+  .header{
+    height: 100px;
+    display: flex;
+    border-style: solid;
+    border-color: var(--color_bordes_prop);
+    border-width: 0px 0px 1px 0px;
+    
+  }
+  .contenedor_general
+  {
+    display: grid;
+    justify-content: center;
+    grid-template-areas: 
+    " l l l l "
+    " i i b b "
+    " i i b b "
+    ;
+    grid-gap: 10px;
+    grid-template-rows: 100px 100vh 150px;
+
+
+  }
+
+  .buscador
+  {
+    grid-area: b;
+  }
+
+  .logo
+  {
+    grid-area: l;
+    border-style: solid;
+    border-width: 7px;
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+    margin-left: 15px;
+    margin-top: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-color: white;
+  }
+
+  /*.navegador
+  {
+    display: grid;
+    height: 50px;
+    grid-template-areas: "p_b s_b t_b c_b";
+    grid-template-columns:  150px 150px 150px 150px;
+    grid-gap: 5px;    
+
+  }*/
+
+  .navegador {
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end;
+    border-style: solid;
+    border-width: 0px 0px 1px 0px;
+    border-color: var(--color_bordes_prop);
+    background-color: var(--color_fondo_prop);
+
+  }
+
+  .info
+  {
+    padding-left: 10px;
+    padding-right: 10px;
+    grid-area: i;
+  }
+  .info2
+  {
+    padding-left: 10px;
+    padding-right: 10px;
+    grid-area: b;
+  }
+
+  .pie
+  {
+    grid-area: p;
+  }
+
+
+
+  .prop-logo
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  .prop_busc
+  {
+
+    align-items: center;
+
+  }
+
+
+  .boton_nav
+  {   
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+    border: solid var(--color_bordes_prop) var(--bordes);   
+    height: 25px;
+    width: 100px;
+    font-size: 20px;
+    transition: 0.5s;
+  }
+
+  .boton_nav:hover
+  {
+    color: white;
+    background-color: var(--color_bordes_prop);
+    border-color: #58787A;
+    padding: 5px;
+    padding-left: 10px;      
+  }
+
+  .primer_boton
+  {
+    grid-area: p_b;
+  }
+
+  .segundo_boton
+  {
+    grid-area: s_b;
+  }
+
+  .tercer_boton
+  {
+    grid-area: t_b;
+  }
+
+  .cuarto_boton
+  {
+    grid-area: c_b;
+  }
+
+  .footer{
+    height: 100px;
+    padding: 15px;
+    background-color: var(--color_texto);
+    color: #bce3e3;
+  }
+
+</style>
+
+<body>
+  <!-- Aca empieza el header -->
+  <header class="header">
+    <div class="logo">
+      <img src="../Curso Python FullStack/WhatsApp Image 2022-09-27 at 12.01.43.jpeg" height="130%" width="130%">
+    </div>      
+    </header>
+    <!-- Aca termina el header -->
+    <!-- Aca empieza el NAV -->
+   <nav class="navegador prop-general prop_busc">
+    <div class="primer_boton boton_nav">
+        <span>Inicio</span>
+    </div>
+    <div class="segundo_boton boton_nav">
+        <span>Productos</span>
+    </div>
+    <div class="tercer_boton boton_nav">
+        <span>Envios</span>
+    </div>
+    <div class="cuarto_boton boton_nav">
+      <span>Contacto</span>
+    </div>
+    </nav>
+    <!-- Aca termina el NAV -->
+  
+    <!-- Aca empieza el Main -->
+    <main class="contenedor_general"> 
+        <section class="info">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, nesciunt nihil obcaecati necessitatibus fugiat fuga perspiciatis, accusantium cum nobis architecto velit voluptatum adipisci modi distinctio numquam repudiandae. Voluptas, deleniti repudiandae.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, repellendus! Eligendi tempore quibusdam deserunt, quod nostrum temporibus maiores. Eveniet porro dolor libero quod fugiat quas exercitationem nemo autem non est.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quidem quasi veritatis dignissimos, eius exercitationem ut itaque libero ullam quisquam repellendus at delectus molestias id laboriosam, sed eum odio numquam?</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur voluptate facere, rerum vitae repellat, quam dignissimos beatae eveniet nisi id adipisci illo illum rem, aperiam earum sit facilis qui esse?</p>
+        </section>
+        <section class="info2">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt reprehenderit ex quae quos culpa id veritatis soluta ab debitis saepe quod eligendi perferendis assumenda odio tempora, laboriosam dolorum aut. Odio!</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis fugit voluptatum, quod itaque cumque commodi officia. Architecto saepe sequi, quisquam aliquid necessitatibus porro, ex libero ducimus atque deserunt sit neque!</p>
+          <p>Itaque sunt accusamus, unde id odit dolorum eos impedit, nam ex porro fuga. Animi, laudantium vitae reprehenderit eius minus blanditiis veritatis fuga sequi fugit officiis placeat natus consectetur delectus deserunt?</p>
+          <p>Earum deserunt quaerat rerum, nesciunt neque rem doloribus error laborum voluptatibus nemo saepe corporis temporibus sint cum magnam dolor reiciendis ratione recusandae quia, illum unde labore similique? Eos, ipsam distinctio!</p>
+        </section>
+   
+    </MAIN> 
+    <!-- Aca termina el Main -->
+    
+    <!-- Aca empieza el footer -->  
+    <footer class="footer">
+         <p>Aca un copyright (?)</p>
+         <p>también pueden estar los logos de las redes sociales (?)</p>
+    </footer>
+    <!-- Aca termina el footer -->
+  </body>
+  </html>
