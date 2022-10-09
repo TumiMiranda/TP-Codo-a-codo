@@ -1,0 +1,87 @@
+:root{
+    --color_fondo_prop: #bce3e3;
+    --color_bordes_prop: #7AA7AA;
+    --color_texto: #263B3C;
+    --bordes: 1px;
+  }
+*{
+    margin: 0;
+    padding: 0;
+}
+/*Estilo del menu*/
+.header{
+    position: sticky;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: var(--color_fondo_prop);
+    height: 180px;
+    margin: auto;
+}
+.logo{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;    
+    box-shadow: 0 0 10px var(--color_bordes_prop), 0 0 20px var(--color_bordes_prop), 0 0 40px var(--color_bordes_prop);
+    margin: 0 0 0 10px;
+    padding: 5px;
+}
+.menu{
+    width: 90%;
+}
+.botones{    
+    min-width: 520px;
+    height: 150px;
+    display: flex;    
+    flex-direction: row;
+    justify-content: flex-end;       
+    align-items: center;   
+    padding: 5px;     
+}
+.botones li{    
+    border-radius: 20px;
+    padding: 10px 15px;    
+    list-style: none;
+    width: 100px;
+    align-items: center;
+    margin-right: 20px;
+}
+.botones li a{
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: var(--color_texto);
+    display: block;
+}
+.botones li:hover{
+    background-color: rgba(7A,A7,AA,0.5);    
+    border-radius: 20px;    
+    transition: 0.5s;
+    box-shadow: 0 0 10px var(--color_bordes_prop), 0 0 20px var(--color_bordes_prop), 0 0 40px var(--color_bordes_prop);
+}
+/*Estilos del Main */
+
+.contenedor{
+    margin: auto;
+    margin-top: 2rem;    
+    width: 90vw;
+    text-align: justify;
+}
+.contenedor h1{
+    text-align: center;
+}
+
+/*Estilo del Footer*/
+.footer{
+    height: 100px;
+    padding: 1rem;
+    background-color: black;
+    color: white;
+    text-align: center;
+    align-items: center;
+    margin-top: 3rem;   
+}
+.footer p{
+    align-items: center;
+}
