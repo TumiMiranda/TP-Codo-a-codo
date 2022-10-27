@@ -1,96 +1,112 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- BOOTSTRAP - CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <title>Escencia y Alma | Contacto</title>
+    <link rel="stylesheet" href="estilos.css">
+    <title>Esencia y Alma | Home</title>
 </head>
 <body>
-  <!-- Aca empieza el header -->
-  <header class="header">
-      <div class="logo">
-        <img src="img/logo.jpeg" height="130%" width="130%">
-      </div>      
-</header>
-<!-- Aca termina el header -->
-<!-- Aca empieza el NAV -->
-<nav class="navegador prop-general prop_busc">
-    <div class="boton_nav">
-      <a href="index.html">
-        <span>Inicio</span>
-    </a>
-    </div>
-    <div class="segundo_boton boton_nav">
-        <a href="productos.html">
-            <span>Productos</span>
-        </a>
-    </div>
-    <div class="tercer_boton boton_nav">
-        <a href="envios.html">
-            <span>Envios</span>
-        </a>
-    </div>
-    <div class="cuarto_boton boton_nav">
-      <a href="contacto.html">
-        <span>Contacto</span>
-    </a>
-    </div>
-  </nav>
-<!-- Aca termina el NAV -->
-
-<!-- Aca empieza el Main -->
-<main class="main"> 
-    <h1>Contacto</h1>
-    <section class="map">
-        <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2322.1401541615583!2d-58.38301969814203!3d-34.604108413015005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1ses!2sar!4v1665090814826!5m2!1ses!2sar" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <!-- Inicio del Header -->
+    <header class="header">
+        <img class="logo" src="img/logo.jpeg" alt="Esencia y Alma">    
+        <!-- Inicio del NAV -->
+        <input type="checkbox" id="menu-check">
+        <label id="menu" for="menu-check">
+            <span id="menu-abrir">&#9776;</span>
+            <span id="menu-cerrar">X</span>
+        </label>
+        
+        <nav class="menu">          
+            <ul class="botones">
+                <li><a href="index2.html"><span>Inicio</span></a></li>  
+                <li><a href=""><span>Productos</span></a></li>
+                <li><a href=""><span>Envios</span></a></li>
+                <li><a href="contacto.html"><span>Contacto</span></a></li>
+            </ul>    
+        </nav>
+    <!-- Fin del NAV -->
+    <section class="modal">
+        <div class="modal__container">
+            <img src="img/OK.svg" class="modal__img">
+            <h2 class="modal__title">¡Gracias por contactarte!</h2>
+            <p class="modal__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti nobis nisi quibusdam doloremque expedita quae ipsam accusamus quisquam quas, culpa tempora. Veniam consectetur deleniti maxime.</p>
+            <a href="#" class="modal__close" onclick="closeModal()">Cerrar Modal</a>
+        </div>
     </section>
-    <section class="contact">        
-        <form class="row g-3">
-            <div class="form-floating col-md-6">              
-              <input type="text" class="form-control" id="validationServer01" placeholder="nombre" required>
-              <label for="floatingInput">Nombre</label>
-            </div>
-
-            <div class="form-floating col-md-6">              
-              <input type="text" class="form-control" id="validationServer02" placeholder="apellido" required>
-              <label for="floatingInput">Apellido</label>
-            </div>
-
-            <div class="form-floating col-md-6">                
-                <input type="text" class="form-control" id="floatingInput" placeholder="telefono"required>
-                <label for="floatingInput">Teléfono</label>
-            </div>
-            <div class="form-floating col-md-6">                
-                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                <label for="floatingInput">Email</label>
-            </div>
-            
-            <div class="form-floating">
-                <textarea class="form-control" placeholder="Dejanos tu consulta acá" id="floatingTextarea" style="height: 150px"></textarea>
-                <label for="floatingTextarea">Dejanos tu consulta acá</label>
-              </div>
-             
-            <div class="col-12">
-              <button class="btn btn-primary" type="submit">Enviar</button>
-            </div>
-          </form>
+    <section class="modalError">
+        <div class="Errormodal__container">
+            <img src="img/OK.svg" class="Errormodal__img">
+            <h2 class="Errormodal__title" id="error_title">¡Gracias por contactarte!</h2>            
+            <a href="#" class="Errormodal__close" onclick="closeModal()">Cerrar Modal</a>
+        </div>
     </section>
+    </header>
+    <!-- Fin del Header -->  
+    
+    <!-- Inicio del Main -->
+    <main class="contenedor">
+        <section class="formulario">
+            <h2>Contactanos</h2>
+            <article class="contenedorB">
+            <form id= "contactform" action="" method="post">
+                <div class="row">                
+                <div class="col-25">
+                    <label for="Nombre">Nombre:</label>
+                </div>
+                <div class="col-75">
+                    <input class="texto" type="text" id="nombre" placeholder="Nombre" required><br>
+                </div>
+                </div>
+                <div class="row">
+                <div class="col-25">
+                    <label for="Nombre">Apellido:</label><br>
+                </div>
+                <div class="col-75">
+                    <input class="texto" type="text" id="apellido" placeholder="Apellido" required>
+                </div>
+                </div>
+                <div class="row">
+                <div class="col-25">
+                    <label for="mail">Correo Electronico:</label>
+                </div>
+                <div class="col-75">
+                    <input class="texto" type="email" name="email" id="mail" placeholder="correo@mail.com" required><br>
+                </div>
+                </div>
+                <div class="row">
+                <div class="col-25">
+                    <label for="mensaje">Mensaje:</label>
+                </div>
+                <div class="col-75">
+                    <textarea class="texto" name="mensaje" id="mensaje" cols="60" rows="10" placeholder="Dejanos tu consulta acá" required resizable="no"></textarea><br>
+                </div>
+                </div>
+                <br>
+                <div class="row">
+                    <button class="btn" type="submit" onclick="modalOpen()">Enviar</button>
+                    <button class="btn" type="reset">Limpiar</button>
+                </div>
+            </form>
+        </article>
+        </section>
+        <section class="ubicacion">
+            <h2>¿Donde estamos?:</h2>
+            <p>Av. Corrientes y 9 de Julio, C.A.B.A.</p>
+            <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2322.1401541615583!2d-58.38301969814203!3d-34.604108413015005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1ses!2sar!4v1665090814826!5m2!1ses!2sar" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        
+    </main>
+    <!-- Fin del Main -->
 
-</main> 
-  <!-- Aca termina el Main -->
-  
-  <!-- Aca empieza el footer -->  
-  <footer class="footer">
-       <p>Aca un copyright (?)</p>
-       <p>también pueden estar los logos de las redes sociales (?)</p>      
-  </footer>  
-  <!-- Aca termina el footer -->  
+    <!-- Inicio del Footer -->
+    <footer class="footer">       
+        <p>Team 27</p>
+        <p>Thomas Miranda & Lucas Caracciolo & Roberto Mirengo</p>
+        <p>CODO A CODO 4.0 | TP FRONT END | Todos los derechos reservados &copy;</p>
+    </footer>
+    <!-- Fin del Footer -->
+    <script src="main.js"></script>
 </body>
 </html>
